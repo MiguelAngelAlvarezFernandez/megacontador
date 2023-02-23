@@ -1,37 +1,25 @@
 import { useState } from "react";
+import Boton from "./Components/Boton";
 
 function App() {
 
   let [valorActual, setvalorActual]= useState (0)
 
-  function manexadorClickAumenta () {
+  function Aumentar () {
     let novoValor = valorActual+1
     setvalorActual(novoValor)
   }
 
-  function manexadorClickDisminuye () {
+  function Disminuir () {
     let novoValor = valorActual-1
     setvalorActual(novoValor)
   }
 
-  let [ContadorMas, setContadorMas] = useState(0)
-  function manexadorClickContadorMas () {
-    setContadorMas(ContadorMas+1)
-    manexadorClickAumenta()
-  }
-
-  let [ContadorMenos, setContadorMenos] = useState(0)
-  function manexadorClickContadorMenos () {
-    setContadorMenos(ContadorMenos+1)
-    manexadorClickDisminuye()
-  }
-
-
   return (
     <div>
       <h1>{valorActual}</h1>
-      <button onClick={manexadorClickContadorMas}>Aumentador ({ContadorMas})</button>
-      <button onClick={manexadorClickContadorMenos}>Disminuidor ({ContadorMenos})</button>
+      <Boton Nombre="+" YDespuesDeContarQue={Aumentar}/>
+      <Boton Nombre="-" YDespuesDeContarQue={Disminuir}/>
     </div>
   );
 }
