@@ -15,11 +15,17 @@ function App() {
     setvalorActual(novoValor)
   }
 
+  function Resetear () {
+    let novoValor = 0
+    setvalorActual(novoValor)
+  }
+
   return (
     <div>
       <h1>{valorActual}</h1>
-      <Boton Nombre="+" YDespuesDeContarQue={Aumentar}/>
-      <Boton Nombre="-" YDespuesDeContarQue={Disminuir}/>
+      <Boton NombreBoton="+" YDespuesDeContarQue={Aumentar}/>
+      <Boton NombreBoton="-" YDespuesDeContarQue={Disminuir}/>
+      <Boton NombreBoton="Reset" YDespuesDeContarQue={Resetear}/>
     </div>
   );
 }

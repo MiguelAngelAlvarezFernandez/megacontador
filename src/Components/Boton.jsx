@@ -9,7 +9,7 @@ props.YDespuesDeContarQue()
 }
 
   return (
-    <button onClick={manexadorBoton}> {props.Nombre} ({Contador})</button>
+    <button onClick={manexadorBoton}> {props.NombreBoton} ({Contador})</button>
   );
 }
 
