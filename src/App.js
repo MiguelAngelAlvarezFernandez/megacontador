@@ -14,12 +14,24 @@ function App() {
     setvalorActual(novoValor)
   }
 
+  let [ContadorMas, setContadorMas] = useState(0)
+  function manexadorClickContadorMas () {
+    setContadorMas(ContadorMas+1)
+    manexadorClickAumenta()
+  }
+
+  let [ContadorMenos, setContadorMenos] = useState(0)
+  function manexadorClickContadorMenos () {
+    setContadorMenos(ContadorMenos+1)
+    manexadorClickDisminuye()
+  }
+
 
   return (
     <div>
       <h1>{valorActual}</h1>
-      <button onClick={manexadorClickAumenta}>Aumentador</button>
-      <button onClick={manexadorClickDisminuye}>Disminuidor</button>
+      <button onClick={manexadorClickContadorMas}>Aumentador ({ContadorMas})</button>
+      <button onClick={manexadorClickContadorMenos}>Disminuidor ({ContadorMenos})</button>
     </div>
   );
 }
