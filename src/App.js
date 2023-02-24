@@ -23,8 +23,8 @@ function App() {
   return (
     <div>
       <h1>{valorActual}</h1>
-      <Boton NombreBoton="+" YDespuesDeContarQue={Aumentar}/>
-      <Boton NombreBoton="-" YDespuesDeContarQue={Disminuir}/>
+      <Boton NombreBoton="+" YDespuesDeContarQue={Aumentar} Contador/>
+      <Boton NombreBoton="-" YDespuesDeContarQue={Disminuir} Contador/>
       <Boton NombreBoton="Reset" YDespuesDeContarQue={Resetear}/>
     </div>
   );
