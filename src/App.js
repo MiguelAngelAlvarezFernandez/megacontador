@@ -1,3 +1,4 @@
+import './App.css';
 import { useEffect, useState } from "react";
 import Boton from "./Components/Boton";
 
@@ -23,8 +24,8 @@ function App() {
 
   function ActivarCronometro () {
     setCronometro(!Cronometro) /*Así niego cronómetro, de forma
-                               si empieza siendo true pasa a false
-                               y viceversa lo que me permitirá tener
+                               si empieza siendo false pasa a true al
+                               pulsar y viceversa lo que permite tener
                                en un solo botón el inicio y stop del
                                Cronometro */ 
   }
@@ -41,11 +42,11 @@ function App() {
 
   return (
     <div>
-      <h1>{valorActual}</h1>
-      <Boton NombreBoton="+" YDespuesDeContarQue={Aumentar} Contador/>
-      <Boton NombreBoton="-" YDespuesDeContarQue={Disminuir} Contador/>
-      <Boton NombreBoton="Reset" YDespuesDeContarQue={Resetear}/>
-      <Boton NombreBoton="Cronometro" YDespuesDeContarQue={ActivarCronometro}/>
+      <h1 className={valorActual<0 ? "rojo" : "verde"}>{valorActual}</h1>
+      <Boton NombreBoton="+" YDespuesDeContar={Aumentar} Contador/>
+      <Boton NombreBoton="-" YDespuesDeContar={Disminuir} Contador/>
+      <Boton NombreBoton="Reset" YDespuesDeContar={Resetear}/>
+      <Boton NombreBoton="Cronometro" YDespuesDeContar={ActivarCronometro}/>
     </div>
   );
 }

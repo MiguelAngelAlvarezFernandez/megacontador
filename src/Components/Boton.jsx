@@ -5,7 +5,7 @@ function Boton(props) {
 let [Contador, setContador] = useState(0)
 function manexadorBoton () {
 setContador(Contador+1)
-props.YDespuesDeContarQue()
+props.YDespuesDeContar()
 console.log(Contador)
 }
 
