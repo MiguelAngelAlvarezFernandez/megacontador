@@ -3,5 +3,9 @@
 }
 
 .verde{
-  color:green
+  color:green;
 } 
+
+.rojo, .verde {
+  font-size: 100px;
+}

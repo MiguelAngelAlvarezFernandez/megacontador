@@ -1,4 +1,5 @@
 import './App.css';
+import styles from "./App.module.css"
 import { useEffect, useState } from "react";
 import Boton from "./Components/Boton";
 
@@ -41,13 +42,16 @@ function App() {
 
 
   return (
-    <div>
-      <h1 className={valorActual<0 ? "rojo" : "verde"}>{valorActual}</h1>
-      <Boton NombreBoton="+" YDespuesDeContar={Aumentar} Contador/>
-      <Boton NombreBoton="-" YDespuesDeContar={Disminuir} Contador/>
-      <Boton NombreBoton="Reset" YDespuesDeContar={Resetear}/>
-      <Boton NombreBoton="Cronometro" YDespuesDeContar={ActivarCronometro}/>
+    <main>
+    <h1>MEGACONTADOR</h1>
+    <div className={styles.contador}>
+      <p className={valorActual<0 ? "rojo" : "verde"}> {valorActual}</p>
+      <span className={styles.botonMas}><Boton  NombreBoton="+" YDespuesDeContar={Aumentar} Contador/></span>
+      <span className={styles.botonMenos}><Boton NombreBoton="-" YDespuesDeContar={Disminuir} Contador/></span>
+      <span className={styles.botonReset}><Boton NombreBoton="Reset" YDespuesDeContar={Resetear}/></span>
+      <span className={styles.botonCronometro}><Boton NombreBoton="Cronometro" YDespuesDeContar={ActivarCronometro}/></span>
     </div>
+    </main>
   );
 }
 

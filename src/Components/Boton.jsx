@@ -1,3 +1,4 @@
+import styles from "./Boton.module.css"
 import { useState } from "react";
 
 function Boton(props) {
@@ -10,7 +11,7 @@ console.log(Contador)
 }
 
   return (
-    <button onClick={manexadorBoton}> {props.NombreBoton} {props.Contador && <span>({Contador})</span>}</button>
+    <button className={styles.boton} onClick={manexadorBoton}> {props.NombreBoton} {props.Contador && <span>({Contador})</span>}</button>
   );
 }
 
