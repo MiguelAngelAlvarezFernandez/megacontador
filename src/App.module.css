@@ -4,15 +4,25 @@
   text-align: center;
   border: solid;
   border-radius: 30px;
+  padding: 70px;
   display: grid;
   grid-template-rows: 7% 30% 14% 14% 14% 14% 7%;
   grid-template-columns: 10% 12% 28% 28% 12% 10%;
+  column-gap: 10px;
+  row-gap: 15px;
+  justify-content: center;
+  align-content: center;
   align-items: center;
+  background-color: lightslategray;
 }
 
 p {
   grid-row: 2/3;
   grid-column: 3/5;
+  font-size: 100px;
+  margin: 10px 0px;
+  border: solid;
+  background-color: lightgray;
 }
 
 .botonMas {
