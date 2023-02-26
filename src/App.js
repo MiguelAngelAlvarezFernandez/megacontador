@@ -49,7 +49,7 @@ function App() {
       <span className={styles.botonMas}><Boton  NombreBoton="+" YDespuesDeContar={Aumentar} Contador/></span>
       <span className={styles.botonMenos}><Boton NombreBoton="-" YDespuesDeContar={Disminuir} Contador/></span>
       <span className={styles.botonReset}><Boton NombreBoton="Reset" YDespuesDeContar={Resetear}/></span>
-      <span className={styles.botonCronometro}><Boton NombreBoton="Cronometro" YDespuesDeContar={ActivarCronometro}/></span>
+      <span className={styles.botonCronometro}><Boton NombreBoton="Cronometro ON/OFF" YDespuesDeContar={ActivarCronometro}/></span>
     </div>
     </main>
   );
