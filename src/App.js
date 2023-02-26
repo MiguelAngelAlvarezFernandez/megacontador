@@ -43,7 +43,7 @@ function App() {
 
   return (
     <main>
-    <h1>MEGACONTADOR</h1>
+    <h1 className={styles.megacontador}>MEGACONTADOR</h1>
     <div className={styles.contador}>
       <p className={valorActual<0 ? "rojo" : "verde"}> {valorActual}</p>
       <span className={styles.botonMas}><Boton  NombreBoton="+" YDespuesDeContar={Aumentar} Contador/></span>
