@@ -4,4 +4,11 @@
     font-size: xx-large;
     font-weight: bold;
     border-radius: 20px;
+    background-color: rgb(193, 190, 190); 
+    color: black; 
 }
+
+  .boton:hover {
+    background-color: rgb(102, 100, 100);
+    color: white;
+  }
