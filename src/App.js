@@ -1,7 +1,7 @@
 import './App.css';
 import styles from "./App.module.css"
 import { useEffect, useState } from "react";
-import Boton from "./Components/Boton";
+import Boton from "./Components/Boton/Boton";
 
 function App() {
 
