@@ -11,7 +11,7 @@ console.log(Contador)
 }
 
   return (
-    <button className={styles.boton} onClick={manexadorBoton}> {props.NombreBoton} {props.Contador && <span>({Contador})</span>}</button>
+    <button className={styles.boton} onClick={manexadorBoton}> {props.NombreBoton} {props.Contador && <span className={styles.innerCounter}>{Contador}</span>}</button>
   );
 }
 

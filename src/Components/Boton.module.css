@@ -6,9 +6,19 @@
     border-radius: 20px;
     background-color: rgb(193, 190, 190); 
     color: black; 
+    cursor: pointer;
+    transition-duration: 0.2s;
 }
 
   .boton:hover {
     background-color: rgb(102, 100, 100);
     color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+  .innerCounter{
+    background-color: lightgrey;
+    border: solid;
+    border-radius: 10px;
+    padding: 0px 10px;
   }
