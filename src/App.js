@@ -1,5 +1,4 @@
 import './App.css';
-import styles from "./App.module.css"
 import { useEffect, useState } from "react";
 import Boton from "./Components/Boton/Boton";
 
@@ -43,14 +42,14 @@ function App() {
 
   return (
     <main>
-    <h1 className={styles.megacontador}>MEGACONTADOR</h1>
-    <div className={styles.contador}>
+    <h1 className="megacontador">MEGACONTADOR</h1>
+    <div className="contador">
       <p className={valorActual<0 ? "rojo" : "verde"}> {valorActual}</p>
-      <span className={styles.botonMas}><Boton  NombreBoton="+" YDespuesDeContar={Aumentar} Contador/></span>
-      <span className={styles.botonMenos}><Boton NombreBoton="-" YDespuesDeContar={Disminuir} Contador/></span>
-      <span className={styles.botonReset}><Boton NombreBoton="Reset" YDespuesDeContar={Resetear}/></span>
-      {Cronometro===false && <span className={styles.botonCronometro}><Boton NombreBoton="Cronometro ON" YDespuesDeContar={ActivarCronometro}/></span>}
-      {Cronometro===true && <span className={styles.botonCronometro}><Boton NombreBoton="Cronometro OFF" YDespuesDeContar={ActivarCronometro}/></span>}
+      <span className="botonMas"><Boton  NombreBoton="+" YDespuesDeContar={Aumentar} Contador/></span>
+      <span className="botonMenos"><Boton NombreBoton="-" YDespuesDeContar={Disminuir} Contador/></span>
+      <span className="botonReset"><Boton NombreBoton="Reset" YDespuesDeContar={Resetear}/></span>
+      {Cronometro===false && <span className="botonCronometro"><Boton NombreBoton="Cronometro ON" YDespuesDeContar={ActivarCronometro}/></span>}
+      {Cronometro===true && <span className="botonCronometro"><Boton NombreBoton="Cronometro OFF" YDespuesDeContar={ActivarCronometro}/></span>}
     </div>
     </main>
   );
